@@ -1,0 +1,9 @@
+def add_positive(lst1, lst2):
+    result = []
+    for i in range(len(lst1)):
+        sum = int(lst1[i]) + int(lst2[i])
+        if sum > 0:
+            result.append(sum)
+    return result
+
+print(add_positive([1, 2, 3], [-1, 0, 4]))  # should return  [2, 7]

@@ -1,0 +1,7 @@
+numbers = input("Enter the list:")
+list1 = numbers.split(",")
+
+lowest = min([int(i) for i in list1 if int(i) > 0])
+second_lowest = min([int(i) for i in list1 if int(i) > 0 and int(i) != lowest])
+
+print(lowest + second_lowest)

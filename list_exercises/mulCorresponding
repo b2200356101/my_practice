@@ -1,0 +1,7 @@
+def multiply_corresponding(lst1, lst2):
+    result = []
+    for i in range(len(lst1)):
+        result.append(lst1[i] * lst2[i])
+    return result
+
+print(multiply_corresponding([1, 2, 3], [4, 5, 6]))  # should return [4, 10, 18]

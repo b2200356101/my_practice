@@ -1,0 +1,8 @@
+def multiply_list(lst):
+    result = []
+    for i in lst:
+        for j in lst:
+            result.append(i * j)
+    return result
+
+print(multiply_list([1, 2, 3]))  # should return [1, 4, 9, 2, 8, 27, 3, 6, 9]

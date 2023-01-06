@@ -1,0 +1,9 @@
+def multiply_positive(lst1, lst2):
+    result = []
+    for i in range(len(lst1)):
+        product = lst1[i] * lst2[i]
+        if product > 0:
+            result.append(product)
+    return result
+
+print(multiply_positive([1, 2, 3], [-1, 0, 4]))  # should return [12]
